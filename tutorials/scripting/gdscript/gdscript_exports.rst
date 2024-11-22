@@ -480,6 +480,18 @@ for a list of parameters and their allowed values.
     When using ``@export_custom``, GDScript does not perform any validation on
     the syntax. Invalid syntax may have unexpected behavior in the inspector.
 
+``@export_tool_button``
+------------------
+
+You can export a ``Callable`` property to display a clickable button with a label (and optionally an icon) in the inspector. The callable will be called in the editor when the button is pressed. ``@export_tool_button`` requires the script to have the ``@tool`` annotation at the top of the script. 
+
+If an icon is specified, it is used to fetch an icon for the button via Control.get_theme_icon(), from the "EditorIcons" theme type. If icon is omitted, the default "Callable" icon is used instead.
+
+
+
+
+
+
 Setting exported variables from a tool script
 ---------------------------------------------
 
